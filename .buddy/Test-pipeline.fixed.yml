@@ -20,3 +20,9 @@
     title: "$BUDDY_PIPELINE_NAME execution #$BUDDY_RUN_ID"
     content: It ran!
     recipients: klyanevv@gmail.com
+  - action: Send email-1
+    type: EMAIL
+    trigger_time: ON_FAILURE
+    title: "$BUDDY_PIPELINE_NAME execution #$BUDDY_RUN_ID"
+    content: It didnt run
+    recipients: klyanevv@gmail.com
